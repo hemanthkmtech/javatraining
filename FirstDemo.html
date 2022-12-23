@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title>Login Form</title>
+        <style>
+            fieldset{
+                width: 300px;
+                border-color: rgb(38, 247, 247);
+                border-radius: 5px;
+            }
+            legend{
+                color: darkblue;
+            }
+            div{
+                margin-top: 10px;
+                margin-left: 300px;
+            }
+            label{
+                margin: 10px;
+            }
+            input{
+                margin-top: 10px;
+                margin-bottom: 8px;
+            }
+            button{
+                background-color: rgb(54, 54, 193);
+                color: white;
+                border: none;
+                border-radius: 5px;
+                box-shadow: 2px 3px 2px 1px rgb(178, 211, 211);
+                width: 50px;
+                height: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="form"> 
+        <fieldset>
+            <legend>Login Form</legend>
+            <label>Enter Email</label><br>
+            <input type="email" id="email"/><br>
+            <label>Enter Password</label><br>
+            <input type="password" id="password"/><br>
+            <button onclick="showmessage()">Login</button>
+        </fieldset>
+        </div>
+        <div id="welcomeTag" style="display: none;">
+            <h1>Welcome to JavaScript</h1>
+        </div>
+        <div id="userForm" style="display: none;">
+            <button onclick="createUser()">createUser</button>
+        </div>
+        <div id="userInputForm" style="display: none;">
+            <label>UserName</label><br>
+            <input id="userName" type="text"/><br>
+            <label>Age</label><br>
+            <input id="age" type="number"/><br>
+            <label>Email</label><br>
+            <input type="email" id="userEmail"/><br>
+            <label>phone</label><br>
+            <input type="number" id="phno"/><br>
+            <label>place</label><br>
+            <input type="text" id="place"/>
+            <button onclick="save()">save</button>
+        </div>
+        <script>
+            var userObject=new Object();
+            var emailId="hemanthkm068@gmail.com";
+            var fullPassword="Aryan@123";
+            // var element=document.getElementsByTagName("button");
+            // element.addEventListener("click",alert("Welcome to Login Form"))
+            function showmessage(){
+                var email=document.getElementById("email");
+                var password=document.getElementById("password");
+                var emailData=email.value;
+                var passwordData=password.value;
+                console.log(emailData);
+                console.log(passwordData);
+                if(emailData==emailId && fullPassword==passwordData){
+                    var form = document.getElementById("form");
+                    form.style.display="none";
+                    var Welcome=document.getElementById("welcomeTag");
+                    Welcome.style.display="block";
+                    var userForm=document.getElementById("userForm");
+                    userForm.style.display="block";
+                }
+                else{
+                    var message="Wrong credential";
+                }
+
+
+                //alert(message);
+            }
+            function createUser(){
+                //id = 74883332961
+                //password = 6M7h2c 
+                var userInputForm=document.getElementById("userInputForm");
+                userInputForm.style.display="block";
+
+
+            }
+            function save(){
+                var userName=document.getElementById("userName").value;
+                var email=document.getElementById("userEmail").value;
+                var age=document.getElementById("age").value;
+                var phno=document.getElementById("phno").value;
+                var place=document.getElementById("place").value;
+                var user={
+                    username:userName,
+                    userAge:age,
+                    UserEmail:email,
+                    userPhno:phno,
+                    userPlace:place
+                }
+                console.log(user);
+            }
+        </script>
+    </body>
+</html>

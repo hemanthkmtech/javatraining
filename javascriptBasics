@@ -1,0 +1,96 @@
+1995 it was intr in NetScap
+javascript is scripting language
+language will help us to interact with html web page
+javascript object-oriented program
+javascript is an interpreter language
+machine level language (binary language)
+1166400
+memory of system
+(RAM)
+    stack memory and heap memory
+
+hemanth
+24
+mysore
+[hemanth,24,mysore]
+two keywords
+    var and let
+dataType
+ Number
+ String
+ boolean
+ undefined
+ null
+ typeof    
+
+operators in javascript
+    Arithmetic operators
+    (+,-,*,/,%)
+    comparisom operators
+    (>,<,>=,<=,==,!=,===,!==)
+    Bitwise operators
+    (and(&),or(|),~(bitwise),^(xor),>>,<<)
+
+4 0100
+2 0010
+0      0000
+20  00010100
+22  00010110
+    00010100 
+
+    0100
+    0010
+    1001
+    0000000000000
+    1010
+    0101
+    0010
+    formula
+    num/2^num1 left
+    num*2^num1 right
+    logical operators
+    ((&&),(||),(!))
+
+Assign operators
+    (=,+=,-=,*=,/=,%=)
+shorthand operators
+    ++,--
+    => pre
+    => post
+
+condition statments
+    =>if{
+
+    }
+    =>else
+    =>if else
+    => if else if
+
+switch 
+Loops
+    => for while(pri condition) do while(post condition)
+    skip keyword
+    break,continue
+functions
+
+task prime number b/w 1 to 100
+  
+find a even number b/w 100
+
+Array
+
+Objects
+
+I
+II
+III
+V
+VI
+X
+
+Z 26 XXVI
+Y 26 XXV
+
+Array
+    =>group of elements of same data type
+    homo
